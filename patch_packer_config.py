@@ -45,7 +45,7 @@ def make_kms_map(map_string):
     """Convert a string into a map."""
     # The one line version:
     # dict({tuple(k.split(':')) for k in [i.strip() for i in m.split(',')]})
-    result = dict()
+    result = {}
     # split string by comma and strip
     lines = [i.strip() for i in map_string.split(",")]
     for line in lines:
